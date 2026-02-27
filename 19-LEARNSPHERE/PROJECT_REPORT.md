@@ -98,7 +98,7 @@ If Not Authenticated → Show Login Page
     ↓
 User selects Role → Enters Email + Password → Submits
     ↓
-Firebase validates → Auth State updates → User enters app
+neon auth validates → Auth State updates → User enters app
     ↓
 Protected Routes check role → Grant/Deny access
 ```
