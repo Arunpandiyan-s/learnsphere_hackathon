@@ -43,9 +43,8 @@
 
 | Technology | Purpose |
 |---|---|
-| **Firebase Authentication** | User registration, login, session management |
-| **Firebase Realtime Database** | Profile storage, user data persistence |
-| **Firebase Analytics** | Usage tracking and insights |
+| **neon auth Authentication** | User registration, login, session management |
+| **neon postgresql Database** | Profile storage, user data persistence |
 
 ### 2.3 AI / Machine Learning Stack
 
@@ -74,8 +73,8 @@ The application uses **Firebase Authentication** for secure user management.
 
 | Login Type | Description | How It Works |
 |---|---|---|
-| **Email + Password Login** | Traditional email/password authentication | Users enter email and password; Firebase validates credentials via `signInWithEmailAndPassword()` |
-| **Email + Password Registration** | New account creation | Users provide name, email, password, and select a role; Firebase creates the account via `createUserWithEmailAndPassword()` |
+| **Email + Password Login** | Traditional email/password authentication | Users enter email and password; neon auth validates credentials via `signInWithEmailAndPassword()` |
+| **Email + Password Registration** | New account creation | Users provide name, email, password, and select a role; neon auth creates the account via `createUserWithEmailAndPassword()` |
 | **Role-Based Login** | Users select their role before logging in | A visual **Role Selector** component lets users choose: Learner, Instructor, or Admin before signing in |
 
 ### 3.3 User Roles
@@ -92,7 +91,7 @@ The application uses **Firebase Authentication** for secure user management.
 ```
 User Opens App
     ↓
-AuthContext checks Firebase auth state (onAuthStateChanged)
+AuthContext checks neon auth state (onAuthStateChanged)
     ↓
 If Authenticated → Redirect to Dashboard / My Courses
 If Not Authenticated → Show Login Page
@@ -474,5 +473,5 @@ The project showcases the potential of combining modern frontend frameworks with
 
 ---
 
-*Report Generated: February 24, 2026*
+*Report Generated: February 27, 2026*
 *Project: LearnSphere — Learning Management System*
